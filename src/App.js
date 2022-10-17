@@ -3,6 +3,7 @@ import './App.css';
 import './Style.css';
 import Card from './Card';
 import Data from './data.json';
+import Unique from './Unique';
 
 const demoTitle = "New App";
 const demodescription = "New App description";
@@ -46,6 +47,8 @@ function App() {
       <Card textTitle = {Data[2].title} textDesc={Data[2].description} />
       <Card textTitle = {Data[3].title} textDesc={Data[3].description} /> */}
       {Data.map((item, index) => <Card key={index} textTitle = {item.title} textDesc={item.description} />)}
+
+      <Unique />
     </div>
   );
 }
