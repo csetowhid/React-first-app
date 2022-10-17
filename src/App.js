@@ -4,6 +4,7 @@ import './Style.css';
 import Card from './Card';
 import Data from './data.json';
 import Unique from './Unique';
+import Nested from './Nested';
 
 const demoTitle = "New App";
 const demodescription = "New App description";
@@ -49,6 +50,8 @@ function App() {
       {Data.map((item, index) => <Card key={index} textTitle = {item.title} textDesc={item.description} />)}
 
       <Unique />
+      <br/> <br/> <br/> <br/>  
+      <Nested />
     </div>
   );
 }
