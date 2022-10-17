@@ -2,6 +2,7 @@ import logo from './logo.svg';
 import './App.css';
 import './Style.css';
 import Card from './Card';
+import Data from './data.json';
 
 const demoTitle = "New App";
 const demodescription = "New App description";
@@ -18,6 +19,13 @@ const demodescription = "New App description";
 // </div>
 // }
 function App() {
+  // let items = [];
+  // // for(let i=0;i<Data.length;i++){
+  //   // items.push(<Card textTitle = {Data[i].title} textDesc={Data[i].description} />)
+  // // }
+
+  // items = Data.map((item) => <Card textTitle = {item.title} textDesc={item.description} />)
+
   return (
     <div className="App">
       <header className="App-header">
@@ -30,9 +38,14 @@ function App() {
         <h2 className='headingStyle'>{demoTitle}</h2>
         <p>{demodescription}</p>
       </header>
-      <Card textTitle = "This is card Title 1" textDesc="Description 1" />
+      {/* <Card textTitle = "This is card Title 1" textDesc="Description 1" />
       <Card textTitle = "This is card Title 2" textDesc="Description 1" />
-      <Card textTitle = "This is card Title 3" textDesc="Description 1" />
+      <Card textTitle = "This is card Title 3" textDesc="Description 1" /> */}
+      {/* <Card textTitle = {Data[0].title} textDesc={Data[0].description} />
+      <Card textTitle = {Data[1].title} textDesc={Data[1].description} />
+      <Card textTitle = {Data[2].title} textDesc={Data[2].description} />
+      <Card textTitle = {Data[3].title} textDesc={Data[3].description} /> */}
+      {Data.map((item, index) => <Card key={index} textTitle = {item.title} textDesc={item.description} />)}
     </div>
   );
 }
