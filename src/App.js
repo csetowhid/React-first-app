@@ -6,6 +6,7 @@ import Data from './data.json';
 import Unique from './Unique';
 import Nested from './Nested';
 import Card1 from './CardClass';
+import { FaFacebook, FaYoutube } from "react-icons/fa";
 
 const demoTitle = "New App";
 const demodescription = "New App description";
@@ -57,6 +58,11 @@ function App() {
       <br />
       <br />
       <Card1 name="card comp" />
+
+      <button>
+        <FaFacebook className='icon' />
+        <FaYoutube className='icon' />
+      </button>
     </div>
   );
 }
