@@ -34,7 +34,7 @@ export default function Nested(){
                         )
                     }
                 </article>
-            ))};
+            ))}
         </div>
     )
 }

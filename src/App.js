@@ -5,6 +5,7 @@ import Card from './Card';
 import Data from './data.json';
 import Unique from './Unique';
 import Nested from './Nested';
+import Card1 from './CardClass';
 
 const demoTitle = "New App";
 const demodescription = "New App description";
@@ -52,6 +53,10 @@ function App() {
       <Unique />
       <br/> <br/> <br/> <br/>  
       <Nested />
+      <br />
+      <br />
+      <br />
+      <Card1 name="card comp" />
     </div>
   );
 }
