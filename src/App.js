@@ -7,6 +7,7 @@ import Unique from './Unique';
 import Nested from './Nested';
 import Card1 from './CardClass';
 import { FaFacebook, FaYoutube } from "react-icons/fa";
+import ReactBootstrap from './components/React_Bootstrap/ReactBootstrap';
 
 const demoTitle = "New App";
 const demodescription = "New App description";
@@ -63,6 +64,11 @@ function App() {
         <FaFacebook className='icon' />
         <FaYoutube className='icon' />
       </button>
+
+      <br /> <br />
+
+      <ReactBootstrap />
+      
     </div>
   );
 }
