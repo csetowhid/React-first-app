@@ -8,6 +8,7 @@ import Nested from './Nested';
 import Card1 from './CardClass';
 import { FaFacebook, FaYoutube } from "react-icons/fa";
 import ReactBootstrap from './components/React_Bootstrap/ReactBootstrap';
+import State from './components/State';
 
 const demoTitle = "New App";
 const demodescription = "New App description";
@@ -68,7 +69,9 @@ function App() {
       <br /> <br />
 
       <ReactBootstrap />
-      
+      <br /> <br />
+
+      <State />
     </div>
   );
 }
