@@ -9,6 +9,7 @@ import Card1 from './CardClass';
 import { FaFacebook, FaYoutube } from "react-icons/fa";
 import ReactBootstrap from './components/React_Bootstrap/ReactBootstrap';
 import State from './components/State';
+import Conditional from './components/Conditional_Statement/Index';
 
 const demoTitle = "New App";
 const demodescription = "New App description";
@@ -72,6 +73,9 @@ function App() {
       <br /> <br />
 
       <State />
+      <br /> <br />
+      <Conditional />
+    
     </div>
   );
 }
