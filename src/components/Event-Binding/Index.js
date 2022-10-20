@@ -1,31 +1,40 @@
 import React, {Component} from 'react'
 
 
-class EventBonding extends Component{
-    // constructor(props){
-    //     super(props)
-    //     this.state  = {
-    //         changedValue : ''
-    //     }
-    // }
+class EventBinding extends Component{
+    constructor(props){
+        super(props)
+        this.state  = {
+            count : 0
+        }
+        this.handleClick = this.handleClick.bind(this);
+    }
 
-    // handleOnChnage = (e) => {
+    // handleClick = () => {
     //     this.setState({
-    //         changedValue: e.target.value
-    //     }, ()=>{
-    //         console.log(this.state.changedValue);
+    //         count: this.state.count+1
     //     })
     // }
+
+    handleClick(){
+        this.setState({
+            count: this.state.count+1
+        })
+
+    }
 
     render() {
         
         return (
             <div>
                 <h1>Hello Event Bnding </h1>
+                <h2>{this.state.count}</h2>
+                {/* <button onClick={this.handleClick.bind(this)}>Click Me</button> */}
+                <button onClick={this.handleClick}>Click Me</button>
             </div>
         )
         
     }
 }
 
-export default EventBonding;
+export default EventBinding;
