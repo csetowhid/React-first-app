@@ -12,6 +12,8 @@ import State from './components/State';
 import Conditional from './components/Conditional_Statement/Index';
 import EventClass from './components/Event_Handler_Class/Index';
 import EventBinding from './components/Event-Binding/Index';
+import HoockState from './components/Hoocks_UseState/Index';
+import HoocksFunction from './components/Hoocks_UseState/HoocksFunction';
 
 const demoTitle = "New App";
 const demodescription = "New App description";
@@ -81,7 +83,10 @@ function App() {
       <EventClass />
       <br /> <br />
       <EventBinding />
-      
+      <br /> <br />
+      <HoockState />
+      <br /> <br />
+      <HoocksFunction />
     </div>
   );
 }
