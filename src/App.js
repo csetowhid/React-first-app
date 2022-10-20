@@ -11,6 +11,7 @@ import ReactBootstrap from './components/React_Bootstrap/ReactBootstrap';
 import State from './components/State';
 import Conditional from './components/Conditional_Statement/Index';
 import EventClass from './components/Event_Handler_Class/Index';
+import EventBinding from './components/Event-Binding/Index';
 
 const demoTitle = "New App";
 const demodescription = "New App description";
@@ -78,6 +79,8 @@ function App() {
       <Conditional />
       <br /> <br />
       <EventClass />
+      <br /> <br />
+      <EventBinding />
       
     </div>
   );
