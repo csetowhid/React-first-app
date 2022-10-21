@@ -15,6 +15,7 @@ import EventBinding from './components/Event-Binding/Index';
 import HoockState from './components/Hoocks_UseState/Index';
 import HoocksFunction from './components/Hoocks_UseState/HoocksFunction';
 import DynamicStyling from './components/DynamicStyling';
+import Form from './components/Form/Form';
 
 const demoTitle = "New App";
 const demodescription = "New App description";
@@ -88,8 +89,10 @@ function App() {
       <HoockState />
       <br /> <br />
       <HoocksFunction />
+      {/* <br /> <br />
+      <DynamicStyling /> */}
       <br /> <br />
-      <DynamicStyling />
+      <Form />
     </div>
   );
 }
