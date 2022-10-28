@@ -16,6 +16,7 @@ import HoockState from './components/Hoocks_UseState/Index';
 import HoocksFunction from './components/Hoocks_UseState/HoocksFunction';
 import DynamicStyling from './components/DynamicStyling';
 import Form from './components/Form/Form';
+import Child from './components/StateLifting/Child';
 
 const demoTitle = "New App";
 const demodescription = "New App description";
@@ -38,7 +39,10 @@ function App() {
   // // }
 
   // items = Data.map((item) => <Card textTitle = {item.title} textDesc={item.description} />)
-
+  const stateData = "THis is state data";
+  const handleChildData = (childData) => {
+    console.log(childData);
+  }
   return (
     <div className="App">
       <header className="App-header">
@@ -93,6 +97,10 @@ function App() {
       <DynamicStyling /> */}
       <br /> <br />
       <Form />
+
+      <br /> <br />
+      
+      <Child stateData={stateData} onChildData={handleChildData} />
     </div>
   );
 }
