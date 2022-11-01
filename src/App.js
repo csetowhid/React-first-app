@@ -17,6 +17,7 @@ import HoocksFunction from './components/Hoocks_UseState/HoocksFunction';
 import DynamicStyling from './components/DynamicStyling';
 import Form from './components/Form/Form';
 import Child from './components/StateLifting/Child';
+import Home from './components/StateLifting/Home';
 
 const demoTitle = "New App";
 const demodescription = "New App description";
@@ -97,10 +98,11 @@ function App() {
       <DynamicStyling /> */}
       <br /> <br />
       <Form />
-
       <br /> <br />
-      
       <Child stateData={stateData} onChildData={handleChildData} />
+      <br /> <br />
+      <Home />
+      <br /> <br />
     </div>
   );
 }
