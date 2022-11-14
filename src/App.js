@@ -18,6 +18,7 @@ import DynamicStyling from './components/DynamicStyling';
 import Form from './components/Form/Form';
 import Child from './components/StateLifting/Child';
 import Home from './components/StateLifting/Home';
+import Toggle from './components/Toggle/Toggle';
 
 const demoTitle = "New App";
 const demodescription = "New App description";
@@ -46,16 +47,10 @@ function App() {
   }
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
         This is my react app
         {/* <h2 style={headingStyle}>{demoTitle}</h2> */}
         <h2 className='headingStyle'>{demoTitle}</h2>
         <p>{demodescription}</p>
-      </header>
       {/* <Card textTitle = "This is card Title 1" textDesc="Description 1" />
       <Card textTitle = "This is card Title 2" textDesc="Description 1" />
       <Card textTitle = "This is card Title 3" textDesc="Description 1" /> */}
@@ -102,6 +97,9 @@ function App() {
       <Child stateData={stateData} onChildData={handleChildData} />
       <br /> <br />
       <Home />
+      <br /> <br />
+
+      <Toggle />
       <br /> <br />
     </div>
   );
