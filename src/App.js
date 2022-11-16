@@ -19,6 +19,7 @@ import Form from './components/Form/Form';
 import Child from './components/StateLifting/Child';
 import Home from './components/StateLifting/Home';
 import Toggle from './components/Toggle/Toggle';
+import UseEffect from './components/Hooks/useEffect/UseEffect';
 
 const demoTitle = "New App";
 const demodescription = "New App description";
@@ -100,6 +101,8 @@ function App() {
       <br /> <br />
 
       <Toggle />
+      <br /> <br />
+      <UseEffect />
       <br /> <br />
     </div>
   );
